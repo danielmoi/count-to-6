@@ -31,6 +31,7 @@ var equivs = {
 function escaper(unsafe) {
   return unsafe
     .replace(/&/g, "&amp;")
+    // .replace(/'/g, "&#39;")
     .replace(/'/g, "&apos;")
     .replace(/"/g, "&quot;")
     .replace(/</g, "&lt;")
